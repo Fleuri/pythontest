@@ -32,7 +32,8 @@ node_templates:
         target: host
     interfaces:
       cloudify.interfaces.lifecycle:
-        create: hello.py
+        start:
+         implementation: start.sh
 
 outputs:
   http_endpoint:
